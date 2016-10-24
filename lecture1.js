@@ -113,8 +113,7 @@ true
             if( item === 1 ){
              alert('item 1 is fries 89$');
             }
-            
-            else if( item === 1 ){
+            else if( item === 2 ){
                alert('item 2 is burger 29$');
 	    }
             else{
