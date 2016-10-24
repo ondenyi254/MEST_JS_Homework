@@ -108,37 +108,34 @@ true
  * 6. Write a small menu selection function by using if-else and switch, input number, output name of your order
  */
 
-   var age =23;
-
-//tenary
-   age > 15? console.log('valid driver'):   console.log('can not drice');
-
 //if else
-	var age =23;
-            if( age > 18 ){
-             console.log('');
+	var item  =prompt("menu items", "put your items number here");
+            if( item === 1 ){
+             alert('item 1 is fries 89$');
             }
             
+            else if( item === 1 ){
+               alert('item 2 is burger 29$');
+	    }
             else{
-                console.log('');
-
-            }
-        }
+		    alert('item not in menu')
+	    }
+          }
 
 //case statement
-            var grade=97;
-            switch (grade)
+            var item=var n = prompt("menu items", "put your items number here");
+            switch (item)
             {
-               case 97:
-	           console.log('better than last time');
+               case 1:
+	           alert('item 1 is fries 89$');
                break;
             
-               case  80:
-                   console.log('equal to your neaaighboure');
+               case  2:
+                   alert('item 2 is burger 29$');
                break;
             
                default:  
-	           console.log('this is a new score')
+	           alert('item not in menu')
             }
 /*
  * 7. var studentScores = [50, 67, 80, 90, 100, 30, 88, 68]; write a program by using studentScores array ,for loop and conditions.
