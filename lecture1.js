@@ -145,19 +145,19 @@ true
 	for (i = 0; i < studentScores.length; i++) {
 		if (studentScores[i] <= 50)
 		{
-			console.log('Fail')
+	           console.log('Fail')
 		}
 		else if  (studentScores[i] >= 51 && studentScores[i] <= 80 )
 		{
-			console.log('Pass')
+	           console.log('Pass')
 		}
 		else if (studentScores[i] >= 81 && studentScores[i] <= 100)
 		{
-		console.log('Exemplary')
+		    console.log('Exemplary')
 		}
 		else
 		{
-			console.log('out of range')
+		    console.log('out of range')
 		}
 	}
 
