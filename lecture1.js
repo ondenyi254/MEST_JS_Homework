@@ -59,7 +59,7 @@ true
 
 
 //function objects
-    function pizza(mushrooms, groundBeef, hamPieces,pineappleSlices) {
+    function Pizza(mushrooms, groundBeef, hamPieces,pineappleSlices) {
 				this.mushrooms = mushrooms; 
 				this.groundBeef = groundBeef;
 				this.hamPieces = hamPieces; 
@@ -82,28 +82,25 @@ true
  *     create two animals from it.
  */
 
-	function animals(name, warmBlood, invertabrate) {
+	function Animals(name, warmBlood, invertabrate) {
 	    this.name = name;
 	    this.warmBlood = warmBlood;
 	    this.invertabrate = invertabrate;
 	  }
 
-	animals.prototype.view = function() {
+	Animals.prototype.view = function() {
 	    return this.name ;
 	};
 	
-   	 animals.prototype.isWarmBlood = function(warmBlood) {
-		if (warmBlood == true) {
-			return true
-		} else { 
-			return false
-		}};
+   	Animals.prototype.isWarmBlood = function(warmBlood) {
+		return this.warmBlood
+	};
 
 
 //create two animal instances
-    var animal1 = new animals("Eagle", true, true);
+    var Animal1 = new animals("Eagle", true, true);
 
-    var animal2 = new animals("cow", true, true);
+    var Animal2 = new animals("cow", true, true);
 
 
 
