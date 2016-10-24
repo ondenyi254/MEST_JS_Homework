@@ -43,38 +43,38 @@ true
 /*
  * 4. Build a pizza object by using all three object creation method, it must has at least 4 properties
  */
-const pizza{
-			Mushroom,
-			groundBeef,
-			hamPieces,
-			pineappleSlices,
-			};
+   const pizza{
+	    mushroom,
+	    groundBeef,
+	    hamPieces,
+	    pineappleSlices,
+	   };
 
 //inbuilt  objects
-var pizza        = {};
-pizza.Mushrooms  = ‘thosemushrooms’;
-pizza.groundBeef = ‘4 peaces’;
-pizza.hamPieces  = 12;
-pizza.pineappleSlices = '12 slices';
+   var pizza  = {};
+	pizza.Mushrooms  = ‘thosemushrooms’;
+	pizza.groundBeef = ‘4 peaces’;
+	pizza.hamPieces  = 12;
+	pizza.pineappleSlices = '12 slices';
 
 
 //function objects
-function pizza(mushrooms, groundBeef, hamPieces,pineappleSlices) {
+    function pizza(mushrooms, groundBeef, hamPieces,pineappleSlices) {
 				this.mushrooms = mushrooms; 
 				this.groundBeef = groundBeef;
 				this.hamPieces = hamPieces; 
 				this.pineappleSlices = pineappleSlices; 
-} 
+                                 } 
 
 //object.create
-var object = Object.create(); 
-Var pizza = {
-				Mushrooms  = 'thosemushrooms';
-				groundBeef = 'pieces';
-				hamPieces  = 12;
-				pineappleSlices = '12 slices';
-            };
-var pizza1 = Object.create(pizza); 
+	var object = Object.create(); 
+	Var pizza = {
+		mushrooms  = 'thosemushrooms';
+		groundBeef = 'pieces';
+		hamPieces  = 12;
+		pineappleSlices = '12 slices';
+		    };
+	var pizza1 = Object.create(pizza); 
 
 
 /*
@@ -82,15 +82,17 @@ var pizza1 = Object.create(pizza);
  *     create two animals from it.
  */
 
-function animals(name, warmBlood, invertabrate) {
-    this.name = name;
-    this.warmBlood = warmBlood;
-    this.invertabrate = invertabrate;
-  }
-animals.prototype.view = function() {
-    return this.name ;
-};
-animals.prototype.isWarmBlood = function(warmBlood) {
+	function animals(name, warmBlood, invertabrate) {
+	    this.name = name;
+	    this.warmBlood = warmBlood;
+	    this.invertabrate = invertabrate;
+	  }
+
+	animals.prototype.view = function() {
+	    return this.name ;
+	};
+	
+   	 animals.prototype.isWarmBlood = function(warmBlood) {
 		if (warmBlood == true) {
 			return true
 		} else { 
@@ -98,12 +100,10 @@ animals.prototype.isWarmBlood = function(warmBlood) {
 		}};
 
 
+//create two animal instances
+    var animal1 = new animals("Eagle", true, true);
 
-
-
-var animal1 = new animals("Eagle", true, true);
-
-var animal2 = new animals("cow", true, true);
+    var animal2 = new animals("cow", true, true);
 
 
 
@@ -111,16 +111,13 @@ var animal2 = new animals("cow", true, true);
  * 6. Write a small menu selection function by using if-else and switch, input number, output name of your order
  */
 
-var age =23;
+   var age =23;
 
 //tenary
-         age > 15? console.log('valid driver'):   console.log('can not drice');
-
-
-
-
+   age > 15? console.log('valid driver'):   console.log('can not drice');
 
 //if else
+	var age =23;
             if( age > 18 ){
              console.log('');
             }
@@ -132,45 +129,44 @@ var age =23;
         }
 
 //case statement
-
-
-
-var grade=97;
+            var grade=97;
             switch (grade)
             {
-               case 97:console.log('better than last time');
+               case 97:
+	           console.log('better than last time');
                break;
             
-               case  80: console.log('equal to your neaaighboure');
+               case  80:
+                   console.log('equal to your neaaighboure');
                break;
             
-               default:  console.log('this is a new score')
+               default:  
+	           console.log('this is a new score')
             }
 /*
  * 7. var studentScores = [50, 67, 80, 90, 100, 30, 88, 68]; write a program by using studentScores array ,for loop and conditions.
  */
 
 
-		var studentScores = [50, 67, 80, 90, 100, 30, 88, 68];
-		for (i = 0; i < studentScores.length; i++) {
-
-					if (studentScores[i] <= 50)
-					{
-						console.log('Fail')
-					}
-					else if  (studentScores[i] >= 51 && studentScores[i] <= 80 )
-					{
-						console.log('Pass')
-					}
-					else if (studentScores[i] >= 81 && studentScores[i] <= 100)
-					{
-					console.log('Exemplary')
-					}
-					else
-					{
-						console.log('out of range')
-					}
+	var studentScores = [50, 67, 80, 90, 100, 30, 88, 68];
+	for (i = 0; i < studentScores.length; i++) {
+		if (studentScores[i] <= 50)
+		{
+			console.log('Fail')
 		}
+		else if  (studentScores[i] >= 51 && studentScores[i] <= 80 )
+		{
+			console.log('Pass')
+		}
+		else if (studentScores[i] >= 81 && studentScores[i] <= 100)
+		{
+		console.log('Exemplary')
+		}
+		else
+		{
+			console.log('out of range')
+		}
+	}
 
 
 
@@ -178,13 +174,12 @@ var grade=97;
  * 8. var studentScores = [50, 67, 80, 90, 100, 30, 88, 68]; write a program by using studentScores array , array.forEach and conditions.
  */
 
-var studentScores = [50, 67, 80, 90, 100, 30, 88, 68];
-var totalSum = 0;
-
-for each (var score in studentScores) {
-  totalSum += score;
-  var average= totalSum/studentScores.length
-}
+        var studentScores = [50, 67, 80, 90, 100, 30, 88, 68];
+        var totalSum = 0;
+	for each (var score in studentScores) {
+	totalSum += score;
+	var average= totalSum/studentScores.length
+	}
 
 console.log(totalSum);
 console.log(totalSum);
