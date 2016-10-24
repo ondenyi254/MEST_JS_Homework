@@ -176,4 +176,4 @@ true
 	}
 
 console.log(totalSum);
-console.log(totalSum);
+console.log(average);
