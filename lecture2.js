@@ -7,16 +7,22 @@
  
  \n new line
   \n 
-  returna a new line
+  returns a new line
+  
  \r carriage return
+ returns a curser to the beginning
+ 
  \v vertical tab
  returns  a vertical tab
+ 
  \t
  returns tab character
+ 
  \backspace
  returns(deletes) one character backwards
- \f form feed
  
+ \f form feed
+ returns next form
  */
 
 /*
