@@ -154,7 +154,7 @@ console.log(addTwoNumber(256,532));
 
 (function addTwoNumber (num1, num2) {
                                       return num1 + num2;
-                                    };)();
+                                    }());
 
 /*
  * 12. you have following objects:
